@@ -1,0 +1,47 @@
+html {
+	box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	background: #fff url(../img/bg-sm.jpg) no-repeat center center;
+	background-size: cover;
+
+	@media #{$breakpoint-sm-max} and (orientation: portrait) {
+		background-image: url(../img/bg-sm-v.jpg);
+	}
+
+	@media #{$breakpoint-sm} {
+		background-image: url(../img/bg.jpg);
+	}
+}
+
+.main {
+	background: rgba(#000, 0.4);
+	border: 10px solid #fff;
+	overflow: hidden;
+
+	width: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+
+	@media #{$breakpoint-sm} {
+		background: transparent;		
+		border-width: 2vmin;
+	}
+}
+
