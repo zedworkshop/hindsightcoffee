@@ -1,6 +1,6 @@
 <?php
 
-namespace Hindsight;
+namespace Hindsight\Tweets;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -20,4 +20,9 @@ class Tweet extends Model
         'public',
         'approved',
     ];
+
+    public function setTweetTextAttribute($value)
+    {
+        $this->attributes['tweet_text'] = trim(str_replace('#onsite', '', $value));
+    }
 }

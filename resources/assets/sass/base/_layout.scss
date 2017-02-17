@@ -15,15 +15,16 @@ body {
 }
 
 body {
-	background: #fff url(../img/bg-sm.jpg) no-repeat center center;
+	background: #fff url(../img/bg-2-sm.jpg) no-repeat center center;
 	background-size: cover;
 
 	@media #{$breakpoint-sm-max} and (orientation: portrait) {
-		background-image: url(../img/bg-sm-v.jpg);
+		background-image: url(../img/bg-2-sm-v.jpg);
 	}
 
 	@media #{$breakpoint-sm} {
-		background-image: url(../img/bg.jpg);
+		background-image: url(../img/bg-2.jpg);
+		background-position-x: -12.5vw;
 	}
 }
 
@@ -42,6 +43,23 @@ body {
 	@media #{$breakpoint-sm} {
 		background: transparent;		
 		border-width: 2vmin;
+	}
+}
+
+.menu {
+	background: #fff;
+	padding: 2rem;
+	position: relative;
+	z-index: 2;
+
+	@media #{$breakpoint-md} {
+		width: 30w;
+		min-width: 300px;
+		max-width: 450px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
 	}
 }
 

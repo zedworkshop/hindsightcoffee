@@ -2,7 +2,7 @@
 
 namespace Hindsight\Console\Commands;
 
-use Hindsight\TwitterStream;
+use Hindsight\Tweets\Services\TwitterStream;
 use Illuminate\Console\Command;
 
 class ConnectToStreamingApi extends Command

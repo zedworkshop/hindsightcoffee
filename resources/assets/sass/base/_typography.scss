@@ -21,20 +21,21 @@ h1 {
 }
 
 h2 {
-	font-size: 1.4rem;
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin-bottom: 1.5rem;
 
 	@media #{$breakpoint-xl} {
-		font-size: 2rem;
+		font-size: 1.4rem;
 	}
 }
 
-h3 {
-	font-size: 1.2rem;
-	font-weight: 700;
+h5 {
+	font-size: 0.9rem;
+}
 
-	@media #{$breakpoint-xl} {
-		font-size: 1.8rem;
-	}
+h6 {
+	font-size: 0.8rem;
 }
 
 a {
@@ -44,9 +45,10 @@ a {
 
 p {
 	font-size: 0.9rem;
+	margin-bottom: 1.5rem;
 
 	@media #{$breakpoint-xl} {
-		font-size: 1.2rem;
+		font-size: 1rem;
 	}
 }
 
@@ -62,6 +64,10 @@ p {
 	font-weight: 300;
 }
 
+.bold {
+	font-weight: 700;
+}
+
 .small {
 	font-size: 0.8rem;
 }
@@ -70,4 +76,14 @@ p {
 	font-size: 0.7rem;
 }
 
+.serif {
+	font-family: 'BioRhyme Expanded', serif;
+}
 
+.uppercase {
+	text-transform: uppercase;
+}
+
+.spaced {
+	letter-spacing: 6px;
+}

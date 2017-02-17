@@ -1,19 +1,19 @@
 .siteheader {
 	margin: 1rem 0 0 1rem;
 	padding: 1rem;
-	width: 70%;
-	max-width: 360px;
 
 	@media #{$breakpoint-sm} {
 		padding: 2rem;
+		width: 70vw;
+		max-width: none;
 	}
 }
 
 .logo {
-	margin: 0;
+	margin: 0 0 2rem;
 	padding: 0;
-
 	display: inline-block;
+	width: 100px;
 
 	img {
 		display: block;
@@ -24,15 +24,7 @@
 	@media #{$breakpoint-sm} {
 		background: rgba(#000, 0.4);
 		box-shadow: rgba(#000, 0.4) 0 0 70px 70px;
-	}
-}
-
-h2.comingsoon {
-	font-weight: 300;
-	margin: 3rem 0 0;
-	text-align: left;
-
-	@media #{$breakpoint-sm} {
-		margin-top: 4rem;
+		width: 10vw;
+		max-width: 150px;
 	}
 }

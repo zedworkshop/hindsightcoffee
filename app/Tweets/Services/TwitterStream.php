@@ -1,8 +1,8 @@
 <?php
 
-namespace Hindsight;
+namespace Hindsight\Tweets\Services;
 
-use Hindsight\Jobs\ProcessTweet;
+use Hindsight\Tweets\Jobs\ProcessTweet;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use UserstreamPhirehose;
 

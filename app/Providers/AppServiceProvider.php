@@ -2,7 +2,7 @@
 
 namespace Hindsight\Providers;
 
-use Hindsight\TwitterStream;
+use Hindsight\Tweets\Services\TwitterStream;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider

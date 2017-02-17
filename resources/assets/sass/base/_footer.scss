@@ -1,6 +1,9 @@
 .sitefooter {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	margin: 2rem;
+	padding: 2rem;
+
+	@media #{$breakpoint-sm} {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
 }
