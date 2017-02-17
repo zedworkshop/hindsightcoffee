@@ -24,9 +24,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('Hindsight\TwitterStream', function ($app) {
-            $twitter_access_token = env('TWITTER_ACCESS_TOKEN', null);
-            $twitter_access_token_secret = env('TWITTER_ACCESS_TOKEN_SECRET', null);
+        $this->app->bind(TwitterStream::class, function ($app) {
+            $twitter_access_token = config('services.twitter.access_token');
+            $twitter_access_token_secret = config('services.twitter.access_token_secret');
 
             return new TwitterStream($twitter_access_token, $twitter_access_token_secret);
         });

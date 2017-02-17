@@ -22,11 +22,8 @@ class ConnectToStreamingApi extends Command
 
     public function handle()
     {
-        $twitter_consumer_key = env('TWITTER_CONSUMER_KEY', '');
-        $twitter_consumer_secret = env('TWITTER_CONSUMER_SECRET', '');
-
-        $this->twitter_stream->consumerKey = $twitter_consumer_key;
-        $this->twitter_stream->consumerSecret = $twitter_consumer_secret;
+        $this->twitter_stream->consumerKey = config('services.twitter.consumer_secret');
+        $this->twitter_stream->consumerSecret = config('services.twitter.consumer_key');
         $this->twitter_stream->consume();
     }
 }
